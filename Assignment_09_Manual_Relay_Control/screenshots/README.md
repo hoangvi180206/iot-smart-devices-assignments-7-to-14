@@ -1,1 +1,1 @@
-Add screenshots showing `func start` and browser results for `/api/relay_on` and `/api/relay_off`.
+<img width="1702" height="734" alt="proof" src="https://github.com/user-attachments/assets/1134a082-4177-4833-bdba-54a07debb502" />
