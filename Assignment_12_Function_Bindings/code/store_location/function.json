@@ -1,0 +1,21 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "event",
+      "direction": "in",
+      "eventHubName": "samples-workitems",
+      "connection": "IoTHubEventHubConnectionString",
+      "cardinality": "one",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "blob",
+      "name": "outputblob",
+      "path": "locations/{sys.utcnow}.json",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ]
+}

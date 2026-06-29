@@ -1,0 +1,23 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "event",
+      "direction": "in",
+      "eventHubName": "samples-workitems",
+      "connection": "IoTHubEventHubConnectionString",
+      "cardinality": "one",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "twilioSms",
+      "name": "message",
+      "direction": "out",
+      "accountSidSetting": "TwilioAccountSid",
+      "authTokenSetting": "TwilioAuthToken",
+      "from": "%TwilioFromNumber%",
+      "to": "%TwilioToNumber%"
+    }
+  ]
+}

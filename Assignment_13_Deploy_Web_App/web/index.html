@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT Location Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    #map { height: 400px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; }
+    pre { background: #f4f4f4; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>IoT Location Viewer</h1>
+  <p>This page displays sample GPS telemetry for an IoT transport device.</p>
+
+  <div id="map">Map placeholder - connect your map provider here</div>
+
+  <h2>Latest Location</h2>
+  <pre id="location-output"></pre>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
